@@ -7,7 +7,7 @@ def new_path(old_path):
 
 def change_path(path, mnt):
     new_p = new_path(path)
-    return mnt +'/' + new_p[new_p.find('log'):]
+    return mnt +'/' + new_p[new_p.find('log')+3:]
 
 def cli():
     cli = argparse.ArgumentParser(prog="Programm summary",
